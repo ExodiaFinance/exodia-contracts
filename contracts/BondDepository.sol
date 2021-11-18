@@ -737,7 +737,7 @@ contract OlympusBondDepository is Ownable {
     
     /* ======== POLICY FUNCTIONS ======== */
 
-    enum PARAMETER { VESTING, PAYOUT, FEE, DEBT }
+    enum PARAMETER { VESTING, PAYOUT, FEE, DEBT, MINPRICE }
     /**
      *  @notice set parameters for new bonds
      *  @param _parameter PARAMETER
@@ -755,6 +755,8 @@ contract OlympusBondDepository is Ownable {
             terms.fee = _input;
         } else if ( _parameter == PARAMETER.DEBT ) { // 3
             terms.maxDebt = _input;
+        } else if ( _parameter == PARAMETER.MINPRICE ) { // 4
+            terms.minimumPrice = _input;
         }
     }
 
@@ -771,8 +773,6 @@ contract OlympusBondDepository is Ownable {
         uint _target,
         uint _buffer 
     ) external onlyPolicy() {
-        require( _increment <= terms.controlVariable.mul( 25 ).div( 1000 ), "Increment too large" );
-
         adjustment = Adjust({
             add: _addition,
             rate: _increment,

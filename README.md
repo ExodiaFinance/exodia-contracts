@@ -1,6 +1,12 @@
+
+
+#This repository is archived
+
+Visit our [new repository](https://github.com/ExodiaFinance/contracts)
+
+We have changed repository. This repository is kept to view the changes made to the original contracts with a view diff from the original Olympus contracts.
+
 # Ω Olympus Smart Contracts
-
-
 ##  🔧 Setting up Local Development
 Required: 
 - [Node v14](https://nodejs.org/download/release/latest-v14.x/)  
@@ -25,7 +31,7 @@ Local Setup Steps:
 |EXOD           |[0x3b57f3FeAaF1e8254ec680275Ee6E7727C7413c7](https://ftmscan.com/address/0x3b57f3feaaf1e8254ec680275ee6e7727c7413c7)| Main Token Contract|
 |sEXOD           |[0x8de250C65636Ef02a75e4999890c91cECd38D03D](https://ftmscan.com/address/0x8de250C65636Ef02a75e4999890c91cECd38D03D)| Staked Ohm|
 |Treasury       |[0x6A654D988eEBCD9FfB48ECd5AF9Bd79e090D8347](https://ftmscan.com/address/0x6a654d988eebcd9ffb48ecd5af9bd79e090d8347)| Olympus Treasury holds all the assets        |
-|OlympusStaking |[0xfd31c7d00ca47653c6ce64af53c1571f9c36566a](https://ftmscan.com/address/0x8b8d40f98a2f14e2dd972b3f2e2a2cc227d1e3be)| Main Staking contract responsible for calling rebases every 2200 blocks|
+|OlympusStaking |[0x8b8d40f98a2f14e2dd972b3f2e2a2cc227d1e3be](https://ftmscan.com/address/0x8b8d40f98a2f14e2dd972b3f2e2a2cc227d1e3be)| Main Staking contract responsible for calling rebases every 2200 blocks|
 |StakingHelper  |[0x43CdFC01C2DEF98C595b28E72b58D2575AA05E9B](https://ftmscan.com/address/0x43cdfc01c2def98c595b28e72b58d2575aa05e9b)| Helper Contract to Stake with 0 warmup |
 |DAO            |[0xC4e0cbe134c48085e8FF72eb31f0Ebca29b152ee](https://ftmscan.com/address/0xC4e0cbe134c48085e8FF72eb31f0Ebca29b152ee)|Storage Wallet for DAO under MS |
 |Staking Warm Up|[0xfb14cce5f6951e6c0935927c00a01fc57ed65920](https://ftmscan.com/address/0xfb14cce5f6951e6c0935927c00a01fc57ed65920)| Instructs the Staking contract when a user can claim sOHM |
